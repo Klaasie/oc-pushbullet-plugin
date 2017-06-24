@@ -1,0 +1,15 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: klaasie.pushbullet::lang.settings.label
+
+# Model Form Field configuration
+form: $/klaasie/pushbullet/models/settings/fields.yaml
+
+# Model Class name
+modelClass: Klaasie\Pushbullet\Models\Settings
+
+# Default redirect location
+defaultRedirect: klaasie/pushbullet/settings

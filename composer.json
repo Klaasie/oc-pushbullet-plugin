@@ -1,0 +1,16 @@
+{
+  "name": "klaasie/oc-pushbullet-plugin",
+  "description": "Adds pushbullet integration to OctoberCMS",
+  "type": "october-plugin",
+  "homepage": "https://github.com/Klaasie/oc-pushbullet-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Klaas Poortinga",
+      "email": "poortinga.k@gmail.com"
+    }
+  ],
+  "require": {
+      "ivkos/pushbullet": "3.*"
+  }
+}
