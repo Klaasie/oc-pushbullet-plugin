@@ -68,7 +68,7 @@ class Plugin extends PluginBase
             'pushbullet' => [
                 'label'       => 'klaasie.pushbullet::lang.settings.label',
                 'description' => 'klaasie.pushbullet::lang.settings.description',
-                'category'    => 'Notifications',
+                'category'    => 'klaasie.pushbullet::lang.settings.category',
                 'icon'        => 'icon-commenting-o',
                 'url'         => Backend::url('klaasie/pushbullet/settings'),
                 'order'       => 500,

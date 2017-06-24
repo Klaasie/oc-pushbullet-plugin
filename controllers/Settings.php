@@ -92,8 +92,11 @@ class Settings extends Controller
             Input::get('Settings.access_token', $model->getAttribute('access_token'))
         );
         $pb->device(Input::get('Settings.default_device', $model->getAttribute('default_device')))
-            ->pushNote('Test notification send by OctoberCMS', 'test body');
+            ->pushNote(
+                Lang::get('klaasie.pushbullet::lang.form.test_notification_title'),
+                Lang::get('klaasie.pushbullet::lang.form.test_notification_body')
+            );
 
-        Flash::success('Test notification send.');
+        Flash::success(Lang::get('klaasie.pushbullet::lang.form.test_notification_sent'));
     }
 }
