@@ -2,10 +2,14 @@
 
 namespace Klaasie\Pushbullet;
 
+use App;
 use Backend;
 use Event;
+use Illuminate\Foundation\AliasLoader;
 use Klaasie\Pushbullet\Classes\EventListeners\ExceptionListener;
 use Klaasie\Pushbullet\Classes\EventListeners\LogListener;
+use Klaasie\Pushbullet\Facades\Pushbullet as PushbulletFacade;
+use Klaasie\Pushbullet\ServiceProvider\Pushbullet as PushbulletServiceProvider;
 use System\Classes\PluginBase;
 
 /**
@@ -34,6 +38,11 @@ class Plugin extends PluginBase
      */
     public function register()
     {
+        App::register(PushbulletServiceProvider::class);
+
+        $alias = AliasLoader::getInstance();
+        $alias->alias('Pushbullet', PushbulletFacade::class);
+
         $this->registerEventListeners();
     }
 
