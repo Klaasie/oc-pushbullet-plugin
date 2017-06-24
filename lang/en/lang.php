@@ -21,6 +21,7 @@ return [
         'access_token' => 'Access Token',
         'default_device' => 'Default device',
         'test_notification' => 'Send test push notification',
+        'test_notification_loader' => 'Sending push notification..',
         'log_notification' => 'Send a push notification when an event log is created',
         'log_notification_type' => 'List the types of events that should send a notification',
         'log_notification_type_comment' => 'Leaving this field blank sends a notification on any type.',

@@ -1,4 +1,7 @@
-<button class="btn btn-default"
-        data-request="onTestConnection">
-    <?= e(trans('klaasie.pushbullet::lang.form.test_notification')); ?>
-</button>
+<div class="loading-indicator-container">
+    <button class="btn btn-default"
+            data-request="onTestConnection"
+            data-load-indicator="<?= e(trans('klaasie.pushbullet::lang.form.test_notification_loader')); ?>">
+        <?= e(trans('klaasie.pushbullet::lang.form.test_notification')); ?>
+    </button>
+</div>
