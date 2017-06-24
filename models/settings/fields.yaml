@@ -1,0 +1,56 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    general_section:
+        label: klaasie.pushbullet::lang.form.general_settings
+        type: section
+tabs:
+    fields:
+        #
+        # General settings
+        #
+        access_token:
+            tab: klaasie.pushbullet::lang.form.tab_general
+            label: klaasie.pushbullet::lang.form.access_token
+            span: left
+
+        default_device:
+            tab: klaasie.pushbullet::lang.form.tab_general
+            label: klaasie.pushbullet::lang.form.default_device
+            type: dropdown
+            span: left
+            dependsOn: access_token
+
+        test:
+            tab: klaasie.pushbullet::lang.form.tab_general
+            span: left
+            type: partial
+
+        #
+        # Notifications
+        #
+        log_notification:
+            tab: klaasie.pushbullet::lang.form.tab_notifications
+            label: klaasie.pushbullet::lang.form.log_notification
+            span: left
+            type: switch
+
+        log_notification_type:
+            tab: klaasie.pushbullet::lang.form.tab_notifications
+            label: klaasie.pushbullet::lang.form.log_notification_type
+            commentAbove: klaasie.pushbullet::lang.form.log_notification_type_comment
+            span: left
+            type: taglist
+            options: true
+            trigger:
+                action: show
+                field: log_notification
+                condition: checked
+
+        exception_notification:
+            tab: klaasie.pushbullet::lang.form.tab_notifications
+            label: klaasie.pushbullet::lang.form.exception_notification
+            span: left
+            type: switch
