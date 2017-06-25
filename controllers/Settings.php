@@ -40,7 +40,7 @@ class Settings extends Controller
         parent::__construct();
 
         BackendMenu::setContext('October.System', 'system', 'settings');
-        SettingsManager::setContext('Klaasie.Pushbullet', 'settings');
+        SettingsManager::setContext('Klaasie.Pushbullet', 'Pushbullet');
     }
 
     /**
