@@ -3,9 +3,9 @@
 namespace Klaasie\Pushbullet\Classes\EventListeners;
 
 use Exception;
-use Illuminate\Events\Dispatcher;
 use Illuminate\Http\Request;
 use Klaasie\Pushbullet\Models\Settings;
+use October\Rain\Events\Dispatcher;
 use Pushbullet\Pushbullet;
 
 /**
