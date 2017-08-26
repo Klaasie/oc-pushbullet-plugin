@@ -3,8 +3,9 @@
 namespace Klaasie\Pushbullet\Classes\EventListeners;
 
 use Exception;
-use Illuminate\Events\Dispatcher;
+
 use Klaasie\Pushbullet\Models\Settings;
+use October\Rain\Events\Dispatcher;
 use Pushbullet\Pushbullet;
 use System\Models\EventLog;
 
